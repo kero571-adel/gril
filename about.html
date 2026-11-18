@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>عن المطعم وموقعنا | مشاوي الجمر</title>
+  <title>عن المطعم ومطبخنا | مشاوي الجمر</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,10 +21,10 @@
 <header class="nav" id="nav">
   <div class="nav__inner">
     <a href="index.html" class="logo">
-      <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2c.6 3-1.4 4.6-2.8 6.4C7.8 10.2 7 11.8 7 13.6 7 16.6 9.2 19 12 19s5-2.4 5-5.4c0-1.6-.6-3-1.6-4.2-.2 1-.8 1.8-1.6 2.2.4-3-.8-6-1.8-9.6zM12 22c-3.9 0-7-1.3-7-2.6h14c0 1.3-3.1 2.6-7 2.6z"/></svg>
+      <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2c.6 3-1.4 4.6-2.8 6.4C7.8 10.2 7 11.8 7 13.6 7 16.6 9.2 19 12 19s5-2.4 5-5.4c0-1.6-.6-3-1.6-4.2-.2 1-.8 1.8-1.6 2.2.4-3-.8-6-1.8-9.6zM12 22c-3.9 0-7-1.3-7-2.6h14c0 1.3-3.1 2.6-7 2.6z"/></svg>
       <span>مشاوي الجمر</span>
     </a>
-    
+
     <nav class="nav__menu" id="navMenu">
       <a href="index.html">الرئيسية</a>
       <a href="menu.html">المنيو</a>
@@ -38,33 +38,87 @@
         <span class="cart-text">السلة</span>
         <span class="cart-count">0</span>
       </button>
-      <button class="nav__toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <button class="nav__toggle" id="navToggle" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </header>
 
 <main class="container">
+  <!-- القصة وبيانات الفرع -->
   <div class="about-grid">
     <div>
-      <span class="hero-badge">قصتنا العريقة</span>
-      <h2 style="font-size:2.5rem; margin:1rem 0;">كيف بدأنا على ريحة الفحم الأصلي؟</h2>
-      <p style="color:var(--muted); margin-bottom:1.5rem;">
-        من قلب العاصمة الرياض، انطلقنا في "مشاوي الجمر" بهدف واحد: نرجع الطعم الأصيل للمشويات اللي تذكرك بشوي البر والجمعات الطيبة. ما نستخدم إلا اللحوم البلدية الطازجة، والفحم الطبيعي اللي يعطي اللحم نكهة مميزة ما تنساها.
+      <span class="hero-badge">قصتنا وسر الصنعة</span>
+      <h2 style="font-size:2.3rem; margin:0.8rem 0;">كيف بدأنا على ريحة الجمر الأصلي؟</h2>
+      <p style="color:var(--muted); margin-bottom:1.2rem;">
+        من قلب الرياض، انطلقنا في "مشاوي الجمر" بهدف واحد: نرجع الطعم الأصيل للمشويات اللي تذكرك بشوي البر والجمعات الطيبة. نختار ذبايحنا بعناية يومياً، ونجهز تتبيلاتنا من الصفر بدون أي إضافات صناعية.
       </p>
-      <p style="color:var(--muted); margin-bottom:2rem;">
-        عندنا الشيف وفريقه يجهزون كل سيخ بحب وعناية، لأننا نؤمن إن الأكل الطيب يبدأ من الضمير والذمة في اختيار أجود الأغنام والبهارات.
+      <p style="color:var(--muted); margin-bottom:1.8rem;">
+        فريقنا يوقف على المنقل بشغف وخبرة، عشان يوصلك كل سيخ مستوي بالملي وطري من الداخل.
       </p>
-      <a href="menu.html" class="btn btn--primary">جرب المنيو الحين</a>
+      <a href="menu.html" class="btn btn--primary">تصفح المنيو الكامل</a>
     </div>
 
-    <div>
-      <h3 style="margin-bottom:1rem; color:#fff;">📍 موقعنا الحي (Live Location)</h3>
-      <p style="color:var(--muted); margin-bottom:1rem; font-size:0.95rem;">تفضل بزيارتنا في فرعنا الرئيسي، أو اطلبنا ونوصلك لحد باب بيتك ساخن وطازة.</p>
-      <div class="map-box">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.770933755497!2d46.675295!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sar!2seg!4v1650000000000!5m2!1sar!2seg" allowfullscreen="" loading="lazy"></iframe>
+    <!-- بطاقة بيانات الموقع وزر الفتح المباشر في Google Maps -->
+    <div class="location-card">
+      <h3 style="color:#fff; font-size:1.5rem;">بيانات الفرع والموقع</h3>
+      
+      <div class="location-row">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        <div>
+          <strong style="color:#fff; display:block;">العنوان:</strong>
+          <span style="color:var(--muted);">حي الياسمين، طريق أنس بن مالك، الرياض</span>
+        </div>
       </div>
+
+      <div class="location-row">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <div>
+          <strong style="color:#fff; display:block;">ساعات العمل:</strong>
+          <span style="color:var(--muted);">يومياً من 12:00 ظهراً حتى 2:00 بعد منتصف الليل</span>
+        </div>
+      </div>
+
+      <div class="location-row">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <div>
+          <strong style="color:#fff; display:block;">للحجوزات والاستفسار:</strong>
+          <a href="tel:+966500000000" dir="ltr" style="color:var(--saffron); font-weight:700;">+966 50 000 0000</a>
+        </div>
+      </div>
+
+      <!-- رابط مباشر يفتح تطبيق أو موقع Google Maps -->
+      <a href="https://maps.google.com/?q=24.7136,46.6753" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="width:100%; margin-top:0.5rem;">
+        افتح الموقع على Google Maps ↗
+      </a>
     </div>
   </div>
+
+  <!-- معرض صور المطبخ والتحضير -->
+  <section class="kitchen-section">
+    <div class="section-header" style="margin-bottom: 2rem;">
+      <h2>من قلب مطبخنا ومنقل الجمر</h2>
+      <p>نظافة تامة، لحوم طازجة تُحضّر يومياً، وشوي على أصوله قدام عينك.</p>
+    </div>
+
+    <div class="kitchen-grid">
+      <div class="kitchen-item">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="الشوي على الجمر" loading="lazy">
+        <div class="kitchen-caption">تجهيز الأسياخ على جمر الغضا</div>
+      </div>
+
+      <div class="kitchen-item">
+        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80" alt="تقطيع اللحوم الطازجة" loading="lazy">
+        <div class="kitchen-caption">انتقاء وتقطيع أجود اللحوم البلدية يومياً</div>
+      </div>
+
+      <div class="kitchen-item">
+        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="فريق الطهاة في المطبخ" loading="lazy">
+        <div class="kitchen-caption">فريق طهاة محترف وأعلى معايير النظافة</div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <!-- دراور السلة -->
@@ -87,19 +141,30 @@
   <div class="container footer__grid">
     <div>
       <a href="index.html" class="logo"><span>مشاوي الجمر</span></a>
-      <p style="color:var(--muted); margin-top:0.8rem;">أصل المشويات.</p>
+      <p style="color:var(--muted); margin-top:0.8rem; font-size:0.95rem;">أصل المشويات، نخدمكم بحب وشغف في كل وجبة.</p>
     </div>
     <div>
       <h4>روابط سريعة</h4>
-      <ul><li><a href="index.html">الرئيسية</a></li><li><a href="about.html">عن المطعم</a></li></ul>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="menu.html">المنيو الكامل</a></li>
+        <li><a href="about.html">عن المطعم</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
     </div>
     <div>
       <h4>أوقات العمل</h4>
-      <ul><li>يومياً من 12 ظهراً لـ 2 صباحاً</li></ul>
+      <ul>
+        <li>يومياً من 12 ظهراً</li>
+        <li>حتى 2:00 بعد منتصف الليل</li>
+      </ul>
     </div>
     <div>
-      <h4>تواصل</h4>
-      <ul><li><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></li></ul>
+      <h4>خدمة العملاء</h4>
+      <ul>
+        <li><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></li>
+        <li>الرياض، المملكة العربية السعودية</li>
+      </ul>
     </div>
   </div>
   <div class="footer__bottom"><div class="container">© <span id="year"></span> مشاوي الجمر. جميع الحقوق محفوظة.</div></div>

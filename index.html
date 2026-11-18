@@ -1,239 +1,361 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>مشاوي الجمر | أصل المشويات على الفحم</title>
-  <meta name="description" content="استمتع بألذ الكباب والكفتة والريش المشوية على الفحم في المملكة. توصيل سريع وطعم يبيض الوجه.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<!-- خلفية الفيديو الثابتة -->
-<div class="bg-stage" aria-hidden="true">
-  <video class="bg-video" autoplay loop muted playsinline preload="auto">
-    <source src="videos/grill.mp4" type="video/mp4">
-  </video>
-  <div class="bg-shade"></div>
-</div>
-
-<!-- شريط التنقل المتجاوب -->
-<header class="nav" id="nav">
-  <div class="nav__inner">
-    <a href="index.html" class="logo">
-      <svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2c.6 3-1.4 4.6-2.8 6.4C7.8 10.2 7 11.8 7 13.6 7 16.6 9.2 19 12 19s5-2.4 5-5.4c0-1.6-.6-3-1.6-4.2-.2 1-.8 1.8-1.6 2.2.4-3-.8-6-1.8-9.6zM12 22c-3.9 0-7-1.3-7-2.6h14c0 1.3-3.1 2.6-7 2.6z"/></svg>
-      <span>مشاوي الجمر</span>
-    </a>
-
-    <nav class="nav__menu" id="navMenu">
-      <a href="index.html" class="active">الرئيسية</a>
-      <a href="menu.html">المنيو</a>
-      <a href="about.html">عن المطعم</a>
-      <a href="contact.html">تواصل معنا</a>
-    </nav>
-
-    <div class="nav__actions">
-      <button class="cart-btn" id="cartBtn">
-        <span>🛒</span>
-        <span class="cart-text">السلة</span>
-        <span class="cart-count">0</span>
-      </button>
-      <button class="nav__toggle" id="navToggle" aria-label="القائمة">
-        <span></span><span></span><span></span>
-      </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>مشاوي الجمر | أصل المشويات على الفحم</title>
+    <meta
+      name="description"
+      content="استمتع بألذ الكباب والكفتة والريش المشوية على الفحم في المملكة. توصيل سريع وطعم يبيض الوجه."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- خلفية الفيديو الثابتة -->
+    <div class="bg-stage" aria-hidden="true">
+      <video class="bg-video" autoplay loop muted playsinline preload="auto">
+        <source src="videos/grill.mp4" type="video/mp4" />
+      </video>
+      <div class="bg-shade"></div>
     </div>
-  </div>
-</header>
 
-<main>
-  <!-- قسم الهيرو في منتصف الشاشة وبأحجام متجاوبة -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero__content">
-        <span class="hero-badge">🔥 لحم بلدي طازة</span>
-        <h1>الفحم ولّع، <span>والطعم يبيض الوجه</span></h1>
-        <p>نقدم لك ألذ المشويات على جمر الغضا، تشوي قدام عينك وتوصلك ساخنة تفك الكبد وتملى السفرة طرب.</p>
-        <div class="hero__btns">
-          <a href="menu.html" class="btn btn--primary">اطلب المنيو الحين</a>
-          <a href="about.html" class="btn btn--ghost">وين موقعنا؟</a>
+    <!-- شريط التنقل المتجاوب -->
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 24 24" width="26" height="26">
+            <path
+              fill="currentColor"
+              d="M12 2c.6 3-1.4 4.6-2.8 6.4C7.8 10.2 7 11.8 7 13.6 7 16.6 9.2 19 12 19s5-2.4 5-5.4c0-1.6-.6-3-1.6-4.2-.2 1-.8 1.8-1.6 2.2.4-3-.8-6-1.8-9.6zM12 22c-3.9 0-7-1.3-7-2.6h14c0 1.3-3.1 2.6-7 2.6z"
+            />
+          </svg>
+          <span>مشاوي الجمر</span>
+        </a>
+
+        <nav class="nav__menu" id="navMenu">
+          <a href="index.html" class="active">الرئيسية</a>
+          <a href="menu.html">المنيو</a>
+          <a href="about.html">عن المطعم</a>
+          <a href="contact.html">تواصل معنا</a>
+        </nav>
+
+        <div class="nav__actions">
+          <button class="cart-btn" id="cartBtn">
+            <span>🛒</span>
+            <span class="cart-text">السلة</span>
+            <span class="cart-count">0</span>
+          </button>
+          <button class="nav__toggle" id="navToggle" aria-label="القائمة">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- قسم الهيرو في منتصف الشاشة وبأحجام متجاوبة -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <span class="hero-badge">🔥 لحم بلدي طازة</span>
+            <h1>الفحم ولّع، <span>والطعم يبيض الوجه</span></h1>
+            <p>
+              نقدم لك ألذ المشويات على جمر الغضا، تشوي قدام عينك وتوصلك ساخنة
+              تفك الكبد وتملى السفرة طرب.
+            </p>
+            <div class="hero__btns">
+              <a href="menu.html" class="btn btn--primary">اطلب المنيو الحين</a>
+              <a
+                href="https://maps.google.com/?q=24.7136,46.6753"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--ghost"
+                >وين موقعنا؟</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- مختارات الوجبات -->
+      <section class="section-pad">
+        <div class="container">
+          <div class="section-header">
+            <h2>مختارات الجمر الفاخرة</h2>
+            <p>
+              الأطباق الأكثر طلباً واللي زباينا يعتمدونها في كل عزيمة وجمعة.
+            </p>
+          </div>
+
+          <div class="grid">
+            <article
+              class="dish-card"
+              onclick="
+                openDishModal(
+                  {
+                    name: 'كباب لحم ضاني',
+                    price: 65,
+                    desc: 'سيخ كباب لحم ضاني بلدي متبّل بخلطة الجمر السرية، مشوي على الفحم بمدى هادي.',
+                    img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
+                    addons: [
+                      { name: 'خبز طازج إضافي', price: 3 },
+                      { name: 'سلطة طحينة', price: 5 },
+                      { name: 'بطاطس مقلية مقرمشة', price: 10 },
+                      { name: 'مشروب غازي', price: 4 },
+                    ],
+                  },
+                  event,
+                )
+              "
+            >
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80"
+                  alt="كباب مشوي"
+                  loading="lazy"
+                />
+              </div>
+              <div class="dish-body">
+                <div class="dish-title-price">
+                  <h3>كباب لحم ضاني</h3>
+                  <span class="price">65 ر.س</span>
+                </div>
+                <p>لحم ضاني طازة مشوي على الفحم مع خلطة البهارات الخاصة.</p>
+                <span
+                  style="
+                    color: var(--saffron);
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                  "
+                  >اضغط لتخصيص الطلب ➔</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="dish-card"
+              onclick="
+                openDishModal(
+                  {
+                    name: 'كفتة مشوية على الفحم',
+                    price: 55,
+                    desc: 'كفتة لحم مفروم ناعم بالبقدونس والبصل، مشوية حتى تتحمّر بإتقان.',
+                    img: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80',
+                    addons: [
+                      { name: 'خبز طازج إضافي', price: 3 },
+                      { name: 'صوص ثومية خاص', price: 6 },
+                      { name: 'بطاطس مقلية مقرمشة', price: 10 },
+                    ],
+                  },
+                  event,
+                )
+              "
+            >
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80"
+                  alt="كفتة بالفحم"
+                  loading="lazy"
+                />
+              </div>
+              <div class="dish-body">
+                <div class="dish-title-price">
+                  <h3>كفتة بالفحم</h3>
+                  <span class="price">55 ر.س</span>
+                </div>
+                <p>أصابع كفتة طرية ومتبلة بطريقة تخلي الريحة تقلب الشارع.</p>
+                <span
+                  style="
+                    color: var(--saffron);
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                  "
+                  >اضغط لتخصيص الطلب ➔</span
+                >
+              </div>
+            </article>
+
+            <article
+              class="dish-card"
+              onclick="
+                openDishModal(
+                  {
+                    name: 'ريش ضاني غبرة',
+                    price: 95,
+                    desc: 'ريش ضاني طرية تذوب في الفم، مشوية بمهارة على نار الجمر الهادئة.',
+                    img: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
+                    addons: [
+                      { name: 'رز بسمتي إضافي', price: 15 },
+                      { name: 'سلطة حارة', price: 4 },
+                      { name: 'بيبسي', price: 4 },
+                    ],
+                  },
+                  event,
+                )
+              "
+            >
+              <div class="dish-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+                  alt="ريش ضاني"
+                  loading="lazy"
+                />
+              </div>
+              <div class="dish-body">
+                <div class="dish-title-price">
+                  <h3>ريش ضاني فاخرة</h3>
+                  <span class="price">95 ر.س</span>
+                </div>
+                <p>تستاهل بوجه ضيوفك، طعم غني ولا يُعارض.</p>
+                <span
+                  style="
+                    color: var(--saffron);
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                  "
+                  >اضغط لتخصيص الطلب ➔</span
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- نافذة المودال التفصيلية للوجبة -->
+    <div class="modal-overlay" id="dishModal">
+      <div class="modal-box">
+        <div class="modal-img-col">
+          <img id="modalImg" src="" alt="" />
+        </div>
+        <div class="modal-content-col">
+          <div>
+            <div class="modal-header-row">
+              <h3 id="modalTitle" style="font-size: 1.6rem; color: #fff"></h3>
+              <button class="modal-close" id="modalClose">✕</button>
+            </div>
+            <p
+              id="modalDesc"
+              style="
+                color: var(--muted);
+                margin: 0.6rem 0 1.2rem;
+                font-size: 0.95rem;
+              "
+            ></p>
+            <span
+              id="modalPrice"
+              class="price"
+              style="font-size: 1.4rem"
+            ></span>
+          </div>
+
+          <div class="addons-group">
+            <h4>إضافات وتحبيشات عالبخت (حدد العدد لكل إضافة):</h4>
+            <div id="modalAddons"></div>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 0.8rem;
+            "
+          >
+            <div class="quantity-control">
+              <button id="qtyMinus">-</button>
+              <span id="modalQty">1</span>
+              <button id="qtyPlus">+</button>
+            </div>
+            <button class="btn btn--primary" id="modalAddToCart">
+              أضف للسلة
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- مختارات الوجبات -->
-  <section class="section-pad">
-    <div class="container">
-      <div class="section-header">
-        <h2>مختارات الجمر الفاخرة</h2>
-        <p>الأطباق الأكثر طلباً واللي زباينا يعتمدونها في كل عزيمة وجمعة.</p>
+    <!-- دراور السلة -->
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-header">
+        <h3 style="color: #fff">سلة مشترياتك</h3>
+        <button
+          id="closeCart"
+          style="
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+          "
+        >
+          ✕
+        </button>
       </div>
-
-      <div class="grid">
-        <article class="dish-card" onclick="openDishModal({
-          name: 'كباب لحم ضاني',
-          price: 65,
-          desc: 'سيخ كباب لحم ضاني بلدي متبّل بخلطة الجمر السرية، مشوي على الفحم بمدى هادي.',
-          img: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80',
-          addons: [
-            {name: 'خبز طازج إضافي', price: 3},
-            {name: 'سلطة طحينة', price: 5},
-            {name: 'بطاطس مقلية مقرمشة', price: 10},
-            {name: 'مشروب غازي', price: 4}
-          ]
-        }, event)">
-          <div class="dish-img-wrap">
-            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80" alt="كباب مشوي" loading="lazy">
-          </div>
-          <div class="dish-body">
-            <div class="dish-title-price">
-              <h3>كباب لحم ضاني</h3>
-              <span class="price">65 ر.س</span>
-            </div>
-            <p>لحم ضاني طازة مشوي على الفحم مع خلطة البهارات الخاصة.</p>
-            <span style="color:var(--saffron); font-size:0.9rem; font-weight:700;">اضغط لتخصيص الطلب ➔</span>
-          </div>
-        </article>
-
-        <article class="dish-card" onclick="openDishModal({
-          name: 'كفتة مشوية على الفحم',
-          price: 55,
-          desc: 'كفتة لحم مفروم ناعم بالبقدونس والبصل، مشوية حتى تتحمّر بإتقان.',
-          img: 'https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80',
-          addons: [
-            {name: 'خبز طازج إضافي', price: 3},
-            {name: 'صوص ثومية خاص', price: 6},
-            {name: 'بطاطس مقلية مقرمشة', price: 10}
-          ]
-        }, event)">
-          <div class="dish-img-wrap">
-            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&q=80" alt="كفتة بالفحم" loading="lazy">
-          </div>
-          <div class="dish-body">
-            <div class="dish-title-price">
-              <h3>كفتة بالفحم</h3>
-              <span class="price">55 ر.س</span>
-            </div>
-            <p>أصابع كفتة طرية ومتبلة بطريقة تخلي الريحة تقلب الشارع.</p>
-            <span style="color:var(--saffron); font-size:0.9rem; font-weight:700;">اضغط لتخصيص الطلب ➔</span>
-          </div>
-        </article>
-
-        <article class="dish-card" onclick="openDishModal({
-          name: 'ريش ضاني غبرة',
-          price: 95,
-          desc: 'ريش ضاني طرية تذوب في الفم، مشوية بمهارة على نار الجمر الهادئة.',
-          img: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
-          addons: [
-            {name: 'رز بسمتي إضافي', price: 15},
-            {name: 'سلطة حارة', price: 4},
-            {name: 'بيبسي', price: 4}
-          ]
-        }, event)">
-          <div class="dish-img-wrap">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="ريش ضاني" loading="lazy">
-          </div>
-          <div class="dish-body">
-            <div class="dish-title-price">
-              <h3>ريش ضاني فاخرة</h3>
-              <span class="price">95 ر.س</span>
-            </div>
-            <p>تستاهل بوجه ضيوفك، طعم غني ولا يُعارض.</p>
-            <span style="color:var(--saffron); font-size:0.9rem; font-weight:700;">اضغط لتخصيص الطلب ➔</span>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-</main>
-
-<!-- نافذة المودال التفصيلية للوجبة -->
-<div class="modal-overlay" id="dishModal">
-  <div class="modal-box">
-    <div class="modal-img-col">
-      <img id="modalImg" src="" alt="">
-    </div>
-    <div class="modal-content-col">
-      <div>
-        <div class="modal-header-row">
-          <h3 id="modalTitle" style="font-size:1.6rem; color:#fff;"></h3>
-          <button class="modal-close" id="modalClose">✕</button>
+      <div class="cart-body" id="cartItemsContainer"></div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>المجموع الكلي:</span>
+          <span id="cartTotalPrice" style="color: var(--saffron)">0 ر.س</span>
         </div>
-        <p id="modalDesc" style="color:var(--muted); margin: 0.6rem 0 1.2rem; font-size:0.95rem;"></p>
-        <span id="modalPrice" class="price" style="font-size:1.4rem;"></span>
+        <a href="checkout.html" class="btn btn--primary" style="width: 100%"
+          >إتمام الطلب والدفع</a
+        >
       </div>
+    </div>
 
-      <div class="addons-group">
-        <h4>إضافات وتحبيشات عالبخت (حدد العدد لكل إضافة):</h4>
-        <div id="modalAddons"></div>
-      </div>
-
-      <div style="display:flex; justify-content:space-between; align-items:center; margin-top:0.8rem;">
-        <div class="quantity-control">
-          <button id="qtyMinus">-</button>
-          <span id="modalQty">1</span>
-          <button id="qtyPlus">+</button>
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a href="index.html" class="logo"><span>مشاوي الجمر</span></a>
+          <p
+            style="
+              color: var(--muted);
+              margin-top: 0.8rem;
+              max-width: 280px;
+              font-size: 0.95rem;
+            "
+          >
+            أصل المشويات، نخدمكم بحب وشغف في كل وجبة.
+          </p>
         </div>
-        <button class="btn btn--primary" id="modalAddToCart">أضف للسلة</button>
+        <div>
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="menu.html">المنيو الكامل</a></li>
+            <li><a href="about.html">عن المطعم</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>أوقات العمل</h4>
+          <ul>
+            <li>يومياً من 12 ظهراً</li>
+            <li>حتى 2:00 بعد منتصف الليل</li>
+          </ul>
+        </div>
+        <div>
+          <h4>خدمة العملاء</h4>
+          <ul>
+            <li><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></li>
+            <li>الرياض، المملكة العربية السعودية</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
+      <div class="footer__bottom">
+        <div class="container">
+          © <span id="year"></span> مشاوي الجمر. جميع الحقوق محفوظة.
+        </div>
+      </div>
+    </footer>
 
-<!-- دراور السلة -->
-<div class="cart-drawer" id="cartDrawer">
-  <div class="cart-header">
-    <h3 style="color:#fff;">سلة مشترياتك</h3>
-    <button id="closeCart" style="background:none; border:none; color:#fff; font-size:1.2rem; cursor:pointer;">✕</button>
-  </div>
-  <div class="cart-body" id="cartItemsContainer"></div>
-  <div class="cart-footer">
-    <div class="cart-total">
-      <span>المجموع الكلي:</span>
-      <span id="cartTotalPrice" style="color:var(--saffron);">0 ر.س</span>
-    </div>
-    <a href="checkout.html" class="btn btn--primary" style="width:100%;">إتمام الطلب والدفع</a>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="container footer__grid">
-    <div>
-      <a href="index.html" class="logo"><span>مشاوي الجمر</span></a>
-      <p style="color:var(--muted); margin-top:0.8rem; max-width:280px; font-size:0.95rem;">أصل المشويات، نخدمكم بحب وشغف في كل وجبة.</p>
-    </div>
-    <div>
-      <h4>روابط سريعة</h4>
-      <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="menu.html">المنيو الكامل</a></li>
-        <li><a href="about.html">عن المطعم</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>أوقات العمل</h4>
-      <ul>
-        <li>يومياً من 12 ظهراً</li>
-        <li>حتى 2:00 بعد منتصف الليل</li>
-      </ul>
-    </div>
-    <div>
-      <h4>خدمة العملاء</h4>
-      <ul>
-        <li><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></li>
-        <li>الرياض، المملكة العربية السعودية</li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <div class="container">© <span id="year"></span> مشاوي الجمر. جميع الحقوق محفوظة.</div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
